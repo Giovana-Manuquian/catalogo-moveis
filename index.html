@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMóveis</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- <header class="cabecalho">
+        <a href="index.html">Home</a>
+        <a href="#informacoes">Produtos</a>
+        <a href="#rodape">Redes Sociais</a>
+    </header> -->
+    <div class="topnav">
+        <a href="#home" class="active"><img src="./img/design-de-interiores.png" alt=""></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="#informacoes">Produtos</a>
+            <a href="#rodape">Redes Sociais</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</body>
+
+<section class="home">
+    <div class="imagem-col-1">
+        <h1>Os móveis que<br>todos adoram</h1>
+    </div>
+    <div class="imagem-col-2">
+        <img src="./img/background-3°parte.png" alt="">
+    </div>
+</section>
+
+<section id="informacoes">
+    <section class="produtos">
+        <img src="./img/cadeira.jpg" alt="cadeira branca">
+        <p>cadeira branca</p>
+        <p>R$ 449,99</p>
+    </section>
+    <section class="produtos">
+        <img src="./img/mesa.jpg" alt="mesa de cabeceira">
+        <p>mesa de cabeceira</p>
+        <p>R$ 399,99</p>
+    </section>
+    <section class="produtos">
+        <img src="./img/cadeira-3.jpg" alt="cadeira vermelha">
+        <p>cadeira vermelha</p>
+        <p>R$ 449,99</p>
+    </section>
+    <section class="produtos">
+        <img src="./img/cadeira-2.jpg" alt="cadeira azul">
+        <p>cadeira azul</p>
+        <p>R$ 449,99</p>
+    </section>
+    <section class="produtos">
+        <img src="./img/frigobar.webp" alt="frigobar preto">
+        <p>frigobar</p>
+        <p>R$ 1.100,99</p>
+    </section>
+    <section class="produtos">
+        <img src="./img/mesa-2.jpg" alt="mesa de centro">
+        <p>mesa de centro</p>
+        <p>R$ 299,99</p>
+    </section>
+</section>
+
+<footer id="rodape">
+    <a href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+    <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+</footer>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>

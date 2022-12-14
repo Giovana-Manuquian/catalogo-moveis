@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #E2DED2;
+    border: 3px solid #8E3821;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #8E3821;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.topnav img {
+    width: 30px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+#myLinks a {
+    font-size: 1.05em;
+    font-family: 'Italiana', serif;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: #E2DED2;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    /* background-color: #E2DED2; */
+    color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #E2DED2;
+    color: white;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagem-col-1 {
+    flex-basis: 35%;
+}
+
+.imagem-col-1 h1 {
+    font-size: 2.5em;
+    margin: 45% 0 22% 25%;
+    font-family: 'Italiana', serif;
+}
+
+.imagem-col-2 {
+    flex-basis: 60%;
+}
+
+.imagem-col-2 img {
+    width: 100%;
+    margin-top: -5%;
+}
+
+#informacoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #8E3821;
+    margin-top: 50px;
+}
+
+.produtos {
+    width: 230px;
+    height: 350px;
+    background-color: white;
+    margin: 40px 50px 40px 50px;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    font-family: 'Italiana', serif;
+}
+
+.produtos img {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.produtos:hover img {
+    max-width: 100%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* zoom nas imagens */
+
+.produtos p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* margin-top: 50px; */
+    padding: 20px;
+    gap: 20px;
+    background-color: #E2DED2;
+}
+
+#rodape img {
+    width: 20px;
+}
+
+@media screen and (max-width: 720px) {
+
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: #8E3821;
+        position: relative;
+        margin-bottom: 70px;
+    }
+
+    .topnav img {
+        width: 25px;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    #myLinks a {
+        font-size: 1.05em;
+        font-family: 'Italiana', serif;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: #E2DED2;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        /* background-color: #E2DED2; */
+        color: white;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #E2DED2;
+        color: white;
+    }
+
+    .imagem-col-1 h1 {
+        font-size: 1.5em;
+        margin: 30% 0 22% 25%;
+        font-family: 'Italiana', serif;
+    }
+
+    .imagem-col-2 img {
+        width: 100%;
+        margin-top: -15%;
+    }
+
+    #informacoes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: #8E3821;
+        margin-top: 50px;
+    }
+
+}
